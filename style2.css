@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  background-image: url(brickwall.png);
+}
+
+.box {
+  width: 60%;
+  height: 500px;
+  margin: auto;
+  margin-top: 5%;
+  padding: 0;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  overflow: auto;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  border-bottom: solid black 1px;
+
+  background: white;
+  
+  display: flex;
+  
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  filter: alpha(opacity=60);
+}
+
+.active  {
+  font-weight: bold;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 2em;
+  color: #88304E;
+  text-transform: uppercase;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 20px;
+}
+
+.navigation a:hover {
+  letter-spacing: 3px;
+  -webkit-transition: letter-spacing 2s; /* Safari */
+  transition: letter-spacing 2s;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 50px;
+  text-align: center;
+}
+
+.over  {
+  width: 500px;
+  margin:auto;
+}
+
+article {
+  overflow: hidden;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+aside {
+  margin: 10px 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #522546;
+}
+
+h2 {
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  margin: 5px;
+  color: #522546;
+}
+
+h3 {
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 25px;
+  margin: 2px;
+  font-family: 'Cormorant Garamond', serif;
+  color: black;
+}
+
+p {
+  text-align: left;
+  color: grey;
+  margin: 2px 5px;
+  font-family: calibri;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+a {
+  text-align: center;
+  color: #522546;
+  margin: 2px 5px;
+  font-family: calibri;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.sara {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 70%; 
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.mila {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 1;
+  transform: rotate(350deg);
+}
+
+.sara2 {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  z-index: 1;
+  transform: rotate(5deg);
+}

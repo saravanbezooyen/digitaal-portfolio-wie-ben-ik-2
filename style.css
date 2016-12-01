@@ -1,69 +1,77 @@
 body {
-	margin: 5px;
+	margin:0px;
+	background-color: #c6282e;
+	padding: 0px;
 }
 
-h1 {
-	text-transform: uppercase;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    width: 100%;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: calibri;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-
-article {
-	margin-left: 30%;
-	width: 500px;
-	height: 250px;
-	position: relative;
+header {
+	color: #90984b; 
+	font-size: 60px; 
+	font-family: 'Rouge Script', cursive;
+	font-weight: normal;
+	margin-top: 15%; 
+	text-align: center; 
+	text-shadow: 1px 1px 2px #082b34; 
 }
 
 h2 {
-	text-transform: uppercase;
-	font-family: calibri;
+	color: black;
 	text-align: center;
-	margin: 20px;
 }
 
-p {
-	position: absolute;
-    top: 20%;
-    left: 5px;
-    font-size: 18px;
-    text-align: center;
+ul {
+	list-style: none;
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	justify-content: center;
+	align-content: flex-end;
+	padding: 0px;
+	margin: 0px;
+	align-items: flex-end;
+	background-color: #f29684;
+	border: solid 1px black;	
 }
 
-img {
-	z-index: -1;
-	width: 500px;
-	height: 250px;
-	max-width: 100%;
-	opacity: 0.5;
+li {
+	width: 10%;
+	height: 50px;
+	margin: 5px;
+	text-align: center;
+	flex-basis: auto;
+	padding: 0px;
+}
+
+li a {
+	text-align: center;
+	text-transform: uppercase;
+  	font-family: calibri;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #c6282e;
+	position: relative;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+span.text {
+ 	display:none;
+ 	position: absolute;
+ 	top: -60%;
+ 	font-size: 18px;
+ 	text-align: center;
+ 	color: black;
+}
+
+.icon {
+	align-content: center;
+}
+
+ul li:hover span.text {
+	display: block;
+	visibility: visible;
+  	opacity: 1;
 }
