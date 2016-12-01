@@ -57,6 +57,10 @@ body {
   .navigation {
     justify-content: space-around;
   }
+
+  .box {
+    width: 70%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -77,6 +81,10 @@ body {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
+
+  .box {
+    width: 80%;
+  }
 }
 
 .container {
@@ -84,6 +92,8 @@ body {
   justify-content: center;
   margin: 10px 50px;
   text-align: center;
+  -webkit-flex-flow: row wrap;
+
 }
 
 .over  {
